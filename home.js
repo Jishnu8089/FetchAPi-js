@@ -1,4 +1,4 @@
-//API (APPLICATION PROGRAMMING INTERFACE)
+// //API (APPLICATION PROGRAMMING INTERFACE)
 
 // fetch('https://jsonplaceholder.typicode.com/users/1')
 // .then((res)=>res.json())
@@ -8,7 +8,7 @@
 // .catch((err)=>{
 //     console.log('error :',err);
 // })
-//EXCEPTION HANDLING WITH TRY/CATCH/finally
+// // EXCEPTION HANDLING WITH TRY/CATCH/finally
 // let num =10;
 // try{
 
@@ -21,7 +21,7 @@
 // }finally{
 //     console.log('complited');
 // }
-//async/await.... this is a cleaner way to write promise-based codes
+// // async/await.... this is a cleaner way to write promise-based codes
 
 // async function myfunction(){
 //     try{
@@ -34,7 +34,11 @@
 
 // }
 // myfunction()
-/// arrow function
+
+//-----
+
+
+// // / arrow function
 // let myfunction= async()=>{
 //     try{
 //         const res =  await fetch('https://jsonplaceholder.typicode.com/users/1')
@@ -46,39 +50,43 @@
 
 // }
 // myfunction()
-// function  getuser(){
-//     return new Promis  ;
+
+
+
+
+
+//---------------------------------------------------------
+
+// function getUser(){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>resolve("jithin"),1000)
+//     })
 // }
+
+// function getUserDetails(username){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>resolve(`${username} is a developer`),1000)
+//     })
+// }
+
+// function getUserAge(userDetails){
+//     return new Promise((resolve)=> {
+//         setTimeout(()=> resolve(`${userDetails}, age 25`),1000)
+//     })
+// }
+
 // async function showUserData(){
 //     try{
-//         const name =await getuser();
-    
-//     console.log(name);
-//     const details =await getUserDetails(name);
-//     console.log(details);
+//         const name = await getUser()
+//         console.log(name);
+        
+//         const details = await getUserDetails(name)
+//         console.log(details);
 
-//     const finalResult = await getUserAge(details);
-//     console.log(finalResult);
+//         const finalResult = await getUserAge(details)
+//         console.log(finalResult);
 //     }catch(error){
-//     console.log("Error :",error);
+//     console.log("Error:", error);
 //     }
 // }
 // showUserData()
-// e((resolve)=>{
-//         setTimeout(()=> resolve("Jishnu"),1000);
-//     });
-// }
-// function getUserDetails(username){
-//     return new Promise((resolve)=>{
-//         setTimeout(()=> resolve(`${username} is a devoloper`),1000)
-//     });
-// }
-// function getUserAge(UserDetails){
-//     return new Promise((resolve)=>{
-//         setTimeout(()=> resolve(`${UserDetails},age 25`),1000)
-//     ;
-// }
-  
-
-
-
